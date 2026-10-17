@@ -9,6 +9,16 @@
   var DICT = {
     en: {
       'a11y.skip': 'Skip to content',
+      'a11y.nav': 'Primary navigation',
+      'a11y.mobile': 'Mobile menu',
+      'a11y.scroll': 'Scroll to content',
+      'a11y.filter': 'Filter articles',
+      'a11y.lightbox': 'Image viewer',
+      'a11y.close': 'Close image viewer',
+      'a11y.prev': 'Previous image',
+      'a11y.next': 'Next image',
+      'a11y.footer': 'Footer navigation',
+
 
       'nav.profile': 'Profile',
       'nav.winemaking': 'Winemaking',
@@ -298,6 +308,16 @@
 
     it: {
       'a11y.skip': 'Vai al contenuto',
+      'a11y.nav': 'Navigazione principale',
+      'a11y.mobile': 'Menu mobile',
+      'a11y.scroll': 'Scorri al contenuto',
+      'a11y.filter': 'Filtra gli articoli',
+      'a11y.lightbox': 'Visualizzatore immagini',
+      'a11y.close': 'Chiudi',
+      'a11y.prev': 'Immagine precedente',
+      'a11y.next': 'Immagine successiva',
+      'a11y.footer': 'Navigazione del footer',
+
 
       'nav.profile': 'Profilo',
       'nav.winemaking': 'Enologia',
@@ -625,6 +645,13 @@
       if (typeof hval === 'string') htmlNodes[j].innerHTML = hval;
     }
 
+    var ariaNodes = document.querySelectorAll('[data-i18n-aria]');
+    for (var z = 0; z < ariaNodes.length; z++) {
+      var zkey = ariaNodes[z].getAttribute('data-i18n-aria');
+      var zval = DICT[next][zkey];
+      if (typeof zval === 'string') ariaNodes[z].setAttribute('aria-label', zval);
+    }
+
     var altNodes = document.querySelectorAll('[data-i18n-alt]');
     for (var a = 0; a < altNodes.length; a++) {
       var akey = altNodes[a].getAttribute('data-i18n-alt');
@@ -656,7 +683,7 @@
   var param = null;
   try { param = new URLSearchParams(window.location.search).get('lang'); } catch (e) { param = null; }
 
-  var initial = (param === 'it' || param === 'en') ? param : (saved === 'it' ? 'it' : 'en');
+  var initial = (param === 'it' || param === 'en') ? param : (saved === 'en' ? 'en' : 'it');
   applyLang(initial, false);
 
   var langBtns = document.querySelectorAll('[data-lang-btn]');
