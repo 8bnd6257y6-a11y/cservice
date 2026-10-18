@@ -92,7 +92,7 @@
 
 
       'wm.eyebrow': 'Winemaking services',
-      'wm.h2': 'Enology that protects what the vintage gave you.',
+      'wm.h2': 'Enology that protects and enhances what the vintage gave you.',
       'wm.lead': 'Three disciplines that carry a wine from the press to the shelf — each one built on the previous.',
 
       'wm.c1t': 'Varietal enology',
@@ -392,7 +392,7 @@
 
 
       'wm.eyebrow': 'Servizi enologici',
-      'wm.h2': 'Un\u2019enologia che protegge ciò che l\u2019annata ha dato.',
+      'wm.h2': 'Un\u2019enologia che protegge e valorizza ciò che l\u2019annata ha dato.',
       'wm.lead': 'Tre discipline che accompagnano il vino dalla pressa allo scaffale, una dopo l\u2019altra.',
 
       'wm.c1t': 'Enologia varietale',
