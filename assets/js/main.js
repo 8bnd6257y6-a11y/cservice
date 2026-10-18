@@ -257,7 +257,7 @@
 
       'pub.eyebrow': 'Publications',
       'pub.h2': 'Books and research, with my signature.',
-      'pub.lead': 'Two publications I have authored — one for the trade, one on the economics of hillside viticulture.',
+      'pub.lead': 'Two publications I have authored — one on enology, one on the economics of hillside viticulture.',
       'pub.book': 'Book',
       'pub.ebook': 'Ebook',
       'pub.desc1': 'A book that explains, entry by entry, what wine actually contains — origin, composition, uses and legal references for each ingredient, in light of the new EU labelling rules.',
@@ -557,7 +557,7 @@
 
       'pub.eyebrow': 'Pubblicazioni',
       'pub.h2': 'Libri e ricerca, con la mia firma.',
-      'pub.lead': 'Due pubblicazioni di cui sono autore: una per il settore, una sull\u2019economia della viticoltura collinare.',
+      'pub.lead': 'Due pubblicazioni di cui sono autore: una per l\u2019ambito enologico, una sull\u2019economia della viticoltura collinare.',
       'pub.book': 'Libro',
       'pub.ebook': 'Ebook',
       'pub.desc1': 'Un libro che spiega, scheda per scheda, cosa contiene davvero il vino: origine, composizione, impieghi e riferimenti legali di ogni ingrediente, alla luce della nuova etichettatura europea.',
