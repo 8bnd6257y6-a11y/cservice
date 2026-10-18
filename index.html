@@ -385,6 +385,14 @@
         </div>
         <div class="intl__media">
           <figure class="reveal">
+            <img src="assets/img/albania-field.jpg" data-i18n-alt="intl.alt3" alt="Visita in vigneto in Albania" loading="lazy" width="828" height="799">
+            <figcaption data-i18n="intl.cap3">Visita in vigneto, Albania</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/img/albania-vineyard.jpg" data-i18n-alt="intl.alt4" alt="Nuovo impianto di vite in Albania" loading="lazy" width="828" height="793">
+            <figcaption data-i18n="intl.cap4">Nuovo impianto, Albania</figcaption>
+          </figure>
+          <figure class="reveal">
             <img src="assets/img/china-field-1.jpg" data-i18n-alt="intl.alt1" alt="Visita in un vigneto nello Xinjiang, Cina" loading="lazy" width="940" height="350">
             <figcaption data-i18n="intl.cap1">Lavoro in campo nello Xinjiang, Cina</figcaption>
           </figure>
@@ -826,6 +834,46 @@
     </div>
   </section>
 
+  <!-- ============ SOCIAL / FACEBOOK ============ -->
+  <section class="section social" id="social">
+    <div class="shell">
+      <div class="social__grid">
+        <div class="social__text">
+          <p class="eyebrow"><span data-i18n="fb.eyebrow">Social</span></p>
+          <h2 class="h2 reveal" data-i18n="fb.h2">Dal profilo Facebook, in diretta.</h2>
+          <p class="lead reveal" data-i18n="fb.lead">Gli ultimi post pubblicati, aggiornati automaticamente.</p>
+          <a class="btn btn--solid" href="https://www.facebook.com/alberto.cugnetto.1" target="_blank" rel="noopener" data-i18n="fb.cta">Apri il profilo</a>
+        </div>
+
+        <div class="fbwin reveal" id="fbwin">
+          <div class="fbwin__bar">
+            <span class="fbwin__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="fbwin__title">Facebook</span>
+            <a class="fbwin__open" href="https://www.facebook.com/alberto.cugnetto.1" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13L13 1M4 1h9v9"/></svg>
+            </a>
+          </div>
+          <div class="fbwin__body">
+            <div class="fbwin__frame">
+              <div id="fb-root"></div>
+              <div class="fb-page" data-href="https://www.facebook.com/alberto.cugnetto.1" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/alberto.cugnetto.1" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/alberto.cugnetto.1">Alberto Cugnetto</a></blockquote>
+              </div>
+              <div class="fbwin__fallback">
+                <p data-i18n="fb.fallback">Il plugin di Facebook non è disponibile in questa anteprima.</p>
+                <a class="btn btn--solid" href="https://www.facebook.com/alberto.cugnetto.1" target="_blank" rel="noopener" data-i18n="fb.cta2">Apri gli ultimi post su Facebook</a>
+              </div>
+            </div>
+            <a class="fbwin__more" href="https://www.facebook.com/alberto.cugnetto.1" target="_blank" rel="noopener">
+              <span data-i18n="fb.more">Non vedi i post? Apri il profilo su Facebook</span>
+              <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 13L13 1M4 1h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CONTACT ============ -->
   <section class="section section--dark contact" id="contact">
     <div class="shell">
@@ -931,6 +979,7 @@
   </div>
 </footer>
 
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v21.0"></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>

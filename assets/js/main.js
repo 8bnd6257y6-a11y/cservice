@@ -270,6 +270,17 @@
       'net.acc.desc': 'Founded in 1785 and based in Turin, it publishes agricultural studies and research — including the volume on hillside viticulture economics.',
       'net.aivv.desc': 'Academic society for study, research and outreach in viticulture and enology, with academic sessions and conferences.',
       'net.ugivi.desc': 'Independent association founded in Milan in 1997 to advance EU, national and international wine law.',
+      'fb.eyebrow': 'Social',
+      'fb.h2': 'From the Facebook profile, live.',
+      'fb.lead': 'The latest posts, updated automatically.',
+      'fb.cta': 'Open the profile',
+      'fb.fallback': 'The Facebook plugin is not available in this preview.',
+      'fb.more': 'Can’t see the posts? Open the profile on Facebook',
+      'fb.cta2': 'Open the latest posts on Facebook',
+      'intl.cap3': 'Vineyard visit, Albania',
+      'intl.alt3': 'Vineyard visit in Albania',
+      'intl.cap4': 'New planting, Albania',
+      'intl.alt4': 'New vineyard planting in Albania',
       'ct.eyebrow': 'Contact',
       'ct.h2': 'Tell me about the vineyard, the vintage or the project.',
       'ct.lead': 'I reply within one working day. Write to me in Italian, English or French.',
@@ -570,6 +581,17 @@
       'net.acc.desc': 'Fondata nel 1785 e con sede a Torino, pubblica studi e ricerche in campo agrario — tra cui il volume sull\u2019economia della viticoltura collinare.',
       'net.aivv.desc': 'Società accademica dedicata a studi, ricerca e divulgazione in viticoltura ed enologia, con tornate accademiche e convegni.',
       'net.ugivi.desc': 'Associazione indipendente fondata a Milano nel 1997 per approfondire il diritto vitivinicolo comunitario, nazionale e internazionale.',
+      'fb.eyebrow': 'Social',
+      'fb.h2': 'Dal profilo Facebook, in diretta.',
+      'fb.lead': 'Gli ultimi post pubblicati, aggiornati automaticamente.',
+      'fb.cta': 'Apri il profilo',
+      'fb.fallback': 'Il plugin di Facebook non è disponibile in questa anteprima.',
+      'fb.more': 'Non vedi i post? Apri il profilo su Facebook',
+      'fb.cta2': 'Apri gli ultimi post su Facebook',
+      'intl.cap3': 'Visita in vigneto, Albania',
+      'intl.alt3': 'Visita in vigneto in Albania',
+      'intl.cap4': 'Nuovo impianto, Albania',
+      'intl.alt4': 'Nuovo impianto di vite in Albania',
       'ct.eyebrow': 'Contatto',
       'ct.h2': 'Raccontami del vigneto, dell\u2019annata o del progetto.',
       'ct.lead': 'Rispondo entro un giorno lavorativo. Scrivimi in italiano, inglese o francese.',
@@ -906,6 +928,22 @@
     });
 
     applyNewsFilter('all');
+  }
+
+  /* ---------------- Facebook window fallback ---------------- */
+  var fbwin = document.getElementById('fbwin');
+  if (fbwin) {
+    var fbTries = 0;
+    var fbTimer = window.setInterval(function () {
+      fbTries++;
+      if (fbwin.querySelector('.fb-page iframe')) {
+        fbwin.classList.remove('is-fallback');
+        window.clearInterval(fbTimer);
+      } else if (fbTries > 7) {
+        fbwin.classList.add('is-fallback');
+        window.clearInterval(fbTimer);
+      }
+    }, 1000);
   }
 
   /* ---------------- Contact form ---------------- */
